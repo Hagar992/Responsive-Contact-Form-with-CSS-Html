@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>My Personal Website</title>
+    <!-- ربط ملف CSS لتنسيق الصفحة -->
+    <link rel="stylesheet" href="F:\.NET\HTML\maharatech\styles.css">
+</head>
+<body>
+    <!-- ترويسة الموقع التي تحتوي على العنوان والقائمة -->
+    <header>
+        <h1>Welcome to my personal website</h1>
+        <nav>
+            <ul>
+                <!-- روابط التنقل إلى أقسام مختلفة من الصفحة -->
+                <li><a href="#introduction">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#blog-posts">Blog</a></li>
+                <li><a href="#contact-form">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم المقدمة الذي يحتوي على الصورة والمعلومات الشخصية -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>This page displays my personal website, which includes my CV, works, and blog posts. The goal of this project is to showcase all the aspects you learned in the HTML and CSS course.</p>
+        
+        <!-- حاوية لتنسيق الصورة والمعلومات الشخصية بجانبها -->
+        <div class="intro-container">
+            <!-- الصورة الشخصية -->
+            <img src="https://th.bing.com/th?id=OIP.ZKASlQ9FM5SJlw_jgq1BWQHaHY&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Personal Image" class="intro-image">
+            <!-- معلومات شخصية بجانب الصورة -->
+            <div class="intro-details">
+                <p><strong>Name:</strong> Hagar Atia</p>
+                <p><strong>Age:</strong> 24</p>
+                <p><strong>Specialization:</strong> .NET Full Stack Developer</p>
+            </div>
+        </div>
+
+        <!-- عنصر التحكم في الصوت -->
+        <audio controls>
+            <!-- مصدر ملف الصوت -->
+            <source src="E:\قران\سورة طه (كاملة)❤️ تلاوة هادئة بنبرة جميلة و خاشعة انعزل عن ضجيج العالم قليلا😴 (128 kbps).mp3" type="audio/mp3">
+            <!-- رسالة بديلة في حال عدم دعم المتصفح لعنصر الصوت -->
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- قسم حولي الذي يحتوي على معلومات حول المهارات والتعليم -->
+    <section id="about-me">
+        <h2>About</h2>
+        <p>I am a web developer who specializes in building and designing websites using HTML and CSS. I have experience in developing user interfaces and improving user experience.</p>
+        <h3>Skills</h3>
+        <ul>
+            <!-- قائمة المهارات -->
+            <li>Developing user interfaces</li>
+            <li>Improving user experience</li>
+            <li>Responsive website design</li>
+        </ul>
+
+        <h3>Education</h3>
+        <ol>
+            <!-- قائمة التعليم -->
+            <li>Bachelor of Computer Science</li>
+            <li>Advanced courses in web development</li>
+        </ol>
+    </section>
+
+    <!-- قسم المشاريع الذي يعرض مشاريع سابقة -->
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <table>
+            <tr>
+                <!-- رؤوس الأعمدة في الجدول -->
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Completion Date</th>
+            </tr>
+            <!-- بيانات المشروع الأول -->
+            <tr>
+                <td>Project 1</td>
+                <td>An integrated e-commerce website</td>
+                <td>January 2024</td>
+            </tr>
+            <!-- بيانات المشروع الثاني -->
+            <tr>
+                <td>Project 2</td>
+                <td>Responsive personal blog</td>
+                <td>March 2024</td>
+            </tr>
+            <!-- بيانات المشروع الثالث -->
+            <tr>
+                <td>Project 3</td>
+                <td>Educational website using HTML and CSS</td>
+                <td>May 2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- قسم المدونة الذي يعرض أحدث المقالات -->
+    <section id="blog-posts">
+        <h2>Latest Articles</h2>
+        <article>
+            <h3>How to build a website</h3>
+            <p>In this article, we will learn how to build a website from scratch using HTML and CSS...</p>
+            <!-- رابط لقراءة المزيد من المقال -->
+            <a href="#">Read more</a>
+        </article>
+        <article>
+            <h3>Best practices in developing user interfaces</h3>
+            <p>In this article, we will discuss some best practices for developing user interfaces that enhance user experience...</p>
+            <!-- رابط لقراءة المزيد من المقال -->
+            <a href="#">Read more</a>
+        </article>
+    </section>
+
+    <!-- قسم الاتصال الذي يحتوي على نموذج تواصل -->
+    <section id="contact-form">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <!-- حقل إدخال الاسم -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- حقل إدخال البريد الإلكتروني -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- حقل إدخال الرسالة -->
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <!-- زر الإرسال -->
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>© 2024 Hagar Atia</p>
+    </footer>
+</body>
+</html>

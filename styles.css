@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif; /* تعيين نوع الخط الأساسي للموقع */
+    background-color: #e0f7fa; 
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحشوات الافتراضية */
+    color: #333; /* تعيين لون النص الافتراضي */
+}
+
+
+header {
+    background-color: #00796b; /* تعيين لون خلفية */
+    color: #fff; /*تعيين لون النص  */
+    padding: 15px 0; 
+    text-align: center; /* محاذاة النص في الوسط */
+}
+
+
+nav ul {
+    list-style-type: none; /* إزالة نقاط القائمة الافتراضية */
+    padding: 0; /* إزالة الحشو الافتراضي */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    display: flex; /* استخدام flexbox لعرض العناصر بشكل أفقي */
+    justify-content: center; /* محاذاة العناصر في الوسط */
+}
+
+nav ul li {
+    margin: 0 15px; /* تعيين المسافة بين العناصر في القائمة */
+}
+
+
+nav ul li a {
+    color: #fff; /* تعيين لون النص للروابط */
+    text-decoration: none; /* إزالة التسطير من الروابط */
+    font-weight: bold; /* تعيين وزن الخط إلى عريض */
+}
+
+
+section {
+    margin: 20px; /* تعيين الهوامش حول الأقسام */
+    padding: 20px; /* تعيين الحشو داخل الأقسام */
+    background-color: #ffffff; /* تعيين لون خلفية الأقسام */
+    border-radius: 5px; /* تعيين حواف دائرية للأقسام */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف حول الأقسام */
+    color: #00796b; /* تعيين لون النص داخل الأقسام */
+}
+
+
+.intro-container {
+    display: flex; /* استخدام flexbox لعرض العناصر بجانب بعضها */
+    align-items: center; /* محاذاة العناصر عمودياً في الوسط */
+    gap: 20px; /* تعيين المسافة بين العناصر */
+}
+
+/* تنسيق تفاصيل الصورة بجانبها */
+.intro-details {
+    font-size: 1.2em; /* تعيين حجم الخط للتفاصيل */
+    color: #00796b; /* تعيين لون النص للتفاصيل */
+}
+
+/* تنسيق الجدول */
+table {
+    width: 100%; /* تعيين عرض الجدول ليملأ الحاوية */
+    border-collapse: collapse; /* إزالة المسافات بين حدود الخلايا */
+    margin: 20px 0; /* تعيين الهوامش العلوية والسفلية للجدول */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* تعيين حدود خفيفة للجدول والرؤوس والخلايا */
+}
+
+th, td {
+    padding: 12px; /* تعيين الحشو داخل الخلايا */
+    text-align: left; /* محاذاة النص في الخلايا إلى اليسار */
+}
+
+/* تنسيق الصورة في قسم المقدمة */
+.intro-image {
+    width: 30%; /* تعيين عرض الصورة */
+    height: auto; /* تعيين الارتفاع التلقائي للحفاظ على نسبة الأبعاد */
+    margin-top: 20px; /* تعيين الهامش العلوي للصورة */
+    border-radius: 10px; /* تعيين حواف دائرية للصورة */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* إضافة ظل حول الصورة */
+}
+
+/* تأثير التمرير على الأقسام */
+section:hover {
+    transform: scale(1.05); /* تكبير القسم عند التمرير عليه */
+    transition: transform 0.3s ease-in-out; /* تعيين مدة تأثير التحويل */
+    background-color: #b2dfdb; /* تغيير لون الخلفية عند التمرير */
+}
+
+/* إضافة تأثير التمرير على الصورة */
+.intro-image:hover {
+    transform: scale(1.1); /* تكبير الصورة عند التمرير عليها */
+    transition: transform 0.3s ease-in-out; /* تعيين مدة تأثير التحويل */
+}
+
+/* تنسيق نص الرابط */
+a {
+    color: #00796b; /* تعيين لون النص للرابط */
+    text-decoration: underline; /* إضافة تسطير للرابط */
+}
+
+/* تنسيق نموذج الاتصال */
+#contact-form {
+    margin: 20px auto; /* تعيين الهوامش العلوية والسفلية للنموذج */
+    padding: 20px; /* تعيين الحشو داخل النموذج */
+    background-color: #ffffff; /* تعيين لون الخلفية للنموذج */
+    border-radius: 10px; /* تعيين حواف دائرية للنموذج */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* إضافة ظل حول النموذج */
+}
+
+/* تنسيق حقول الإدخال */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%; /* تعيين عرض الحقول ليملأ الحاوية */
+    padding: 10px; /* تعيين الحشو داخل الحقول */
+    margin-bottom: 15px; /* تعيين الهامش السفلي بين الحقول */
+    border: 1px solid #ccc; /* تعيين حدود خفيفة للحقول */
+    border-radius: 5px; /* تعيين حواف دائرية للحقول */
+    box-sizing: border-box; /* التأكد من أن الحشو والحدود تندرج ضمن عرض الحقل */
+}
+
+/* تنسيق زر الإرسال */
+#contact-form input[type="submit"] {
+    width: 100%; /* تعيين عرض الزر ليملأ الحاوية */
+    padding: 12px 20px; /* تعيين الحشو داخل الزر */
+    background-color: #00796b; /* تعيين لون الخلفية للزر */
+    color: #fff; /* تعيين لون النص داخل الزر */
+    border: none; /* إزالة الحدود الافتراضية للزر */
+    border-radius: 5px; /* تعيين حواف دائرية للزر */
+    cursor: pointer; /* تعيين مؤشر الفأرة عند التمرير فوق الزر */
+}
+
+/* تأثير التمرير على زر الإرسال */
+#contact-form input[type="submit"]:hover {
+    background-color: #004d40; /* تغيير لون الخلفية عند التمرير */
+}
+
+
+
+/* تحسين العرض للشاشات الصغيرة */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    #contact-form {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    #contact-form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #00796b;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+/* تنسيق الفوتر */
+footer {
+    background-color: #00796b; /* تعيين لون الخلفية للفوتر */
+    color: #fff; /* تعيين لون النص داخل الفوتر */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 15px 0; /* تعيين الحشو داخل الفوتر */
+    width: 100%; /* تعيين عرض الفوتر ليملأ الحاوية */
+    position: relative; /* تعيين الوضع ليكون نسبي */
+    bottom: 0; /* تحديد الموقع السفلي */
+    margin-top: 20px; /* إضافة مسافة بين الفوتر والمحتوى */
+}
